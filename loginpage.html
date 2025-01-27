@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg,#71b7e6,#9b59b6);
+        }
+        .container{
+            height: 350px;
+            width: 90%;
+            border-radius: 25px;
+            border: 1% solid;
+            padding: 20px;
+            justify-content: space-between;
+            background-color: white;
+        }
+        div .user-details{
+            width: 300px;
+            border-radius: 20px;
+            border: 1px;
+            justify-content: space-evenly;
+            padding: 10px;
+            margin-bottom: 10px
+        }
+        div .input-box{
+            width: 280px;
+            border-radius: 10px;
+            justify-content: space-between;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        div .input-box:svg{
+            float: left;
+        }
+        div .btn-primary{
+            background-color: rgb(0, 140, 255);
+            color: rgb(232, 238, 238);
+            width: 300px;
+            border-radius: 15px;
+            border: 1px solid;
+            padding: 6px;
+            margin-top: 5px;
+        }
+        div .title{
+            font-size: small;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-bottom: 20px;
+        }
+        div .logos{
+            margin-top: 8px;
+        }
+        div .checkbox{
+            justify-content: space-evenly;
+            float: left;
+        }
+        div .password{
+            float: right;
+            color: rgb(4, 180, 250);
+        }
+        p label{
+            color: rgb(5, 180, 249);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <center>
+        <div class="title"><h1>Login</h1></div>
+        </center>
+            <div class="user-details">
+                <div class="input-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" id="person"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v2c0 .55.45 1 1 1h14c.55 0 1-.45 1-1v-2c0-2.66-5.33-4-8-4z"></path></svg>
+                    <input type="text" placeholder="Enter your Email id" required ><br>
+                    <svg xmlns="http://www.w3.org/2000/svg" heigth="18" width="18" viewBox="0 0 24 24" id="padlock"><path fill="#b2b1ff" d="M16 11H8a1 1 0 0 1-1-1V7a5 5 0 0 1 10 0v3a1 1 0 0 1-1 1ZM9 9h6V7a3 3 0 0 0-6 0Z"></path><rect width="15" height="15" x="2" y="9" fill="#6563ff" rx="3"></rect></svg>
+                    <input type="Password" placeholder="Enter your password" required>
+                </div>
+                <div class="checkbox">
+                <td><input type="checkbox"></td>
+                <label>Remember me</label>
+                </div>
+                <div class="password">
+                <label>Forget Password?</label>
+                </div>
+                <div>
+                    <button type="button" class="btn-primary">Log in</button>
+                </div>
+                <p>Don't have an account?<label>Sign up</label></p>
+                <span>-----------------Or Connect With----------------</span>
+                <div class="logos">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="35px" viewBox="126.445 2.281 589 589" id="facebook"><circle cx="420.945" cy="296.781" r="294.5" fill="#3c5a9a"></circle><path fill="#fff" d="M516.704 92.677h-65.239c-38.715 0-81.777 16.283-81.777 72.402.189 19.554 0 38.281 0 59.357H324.9v71.271h46.174v205.177h84.847V294.353h56.002l5.067-70.117h-62.531s.14-31.191 0-40.249c0-22.177 23.076-20.907 24.464-20.907 10.981 0 32.332.032 37.813 0V92.677h-.032z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="35px" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262" id="google"><path fill="#4285F4" d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"></path><path fill="#34A853" d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"></path><path fill="#FBBC05" d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"></path><path fill="#EB4335" d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8%" height="35px" data-name="Layer 1" viewBox="0 0 24 24" id="github"><path d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"></path></svg>
+                </div>
+            </div>
+    </div>
+    </center>
+</body>
+</html>
